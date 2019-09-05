@@ -1,0 +1,14 @@
+
+
+	Java Full Stack 
+
+	Core Java :	12.5 Days 
+	RDBMS		8 Days 
+	JavaScript 	2.5 Days 
+	Angular		5 Days 
+	Hibernate		3 Days 
+	Spring 		14 Days 
+
+			45 Days 
+	
+	
