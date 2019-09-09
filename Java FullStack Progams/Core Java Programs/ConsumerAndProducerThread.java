@@ -1,7 +1,6 @@
 class Put implements Runnable{
 	Thread t;
 	Work ww;
-	
 	Put(Work ww) {
 	this.ww =ww;
 	t = new Thread(this);
@@ -10,7 +9,7 @@ class Put implements Runnable{
 	public void run() {
 	int i=0;
 	while(i<=10) {
-	ww.put(i);
+		ww.put(i);
 	i++;
 	}	
 	}
