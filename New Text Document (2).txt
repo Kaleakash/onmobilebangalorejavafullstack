@@ -1,0 +1,17 @@
+terminator operator 
+
+forEach()
+anyMatch()
+allMatch()
+noneMatch()
+count()
+
+
+intermediate operator 
+map()
+filter()
+sorted()
+distinct()
+limit()
+skip()
+
