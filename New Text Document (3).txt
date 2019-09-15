@@ -1,0 +1,19 @@
+Function ----> Function interface
+
+	public R apply(T) : receive t parameter and return R value. 
+
+Predicate : It provided test() method which takes T as a parameter and return boolean result. 
+	public boolean test(T obj) {
+
+	}
+Consumer : It provide accept() method which takes T as parameter and no return type. 
+
+	public void accept(T obj) {
+
+	}
+Supplier : It provide get() method which takes 0 parameter but return T value. 
+
+	public T get(){
+
+	return value;
+	}
