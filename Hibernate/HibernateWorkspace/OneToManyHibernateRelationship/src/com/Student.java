@@ -10,6 +10,10 @@ private int sid;
 private String sname;
 private int age;
 private int tsid;
+public Student() {
+	// TODO Auto-generated constructor stub
+	System.out.println("Student object");
+}
 public int getSid() {
 	return sid;
 }

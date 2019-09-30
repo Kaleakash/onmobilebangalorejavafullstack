@@ -2,12 +2,11 @@
 <ehcache>  
   
 <defaultCache  
-maxElementsInMemory="100"   
+maxElementsInMemory="5"   
 eternal="false"   
 timeToIdleSeconds="5"   
 timeToLiveSeconds="5" />  
-  
-<cache name="pack.Emp"   
+  <cache name="pack.Emp"   
 maxElementsInMemory="1"   
 eternal="false"   
 timeToIdleSeconds="6"   

@@ -38,12 +38,10 @@ public class DemoTest {
 	*/
 	
 	//Delete Operations 
-	Trainer t = (Trainer)session.get(Trainer.class, 1);
+	Trainer t = (Trainer)session.get(Trainer.class, 2);
 	if(t!=null) {
-				tran.begin();
-							session.delete(t);
-				tran.commit();
-				System.out.println("Trainer record deleted successfully....");
+				System.out.println(t.getTname());
+				//System.out.println(t.getListOfStd());
 	}else {
 		System.out.println("Trainer is not present");
 	}

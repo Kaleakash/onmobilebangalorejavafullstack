@@ -2,6 +2,7 @@ package com;
 
 import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -13,10 +14,14 @@ public class Trainer {
 private int tid;
 private String tname;
 private String tech;
-@OneToMany(mappedBy = "tsid")		//refer to FK
+@OneToMany(mappedBy = "tsid",fetch = FetchType.EAGER)		//refer to FK
 //@Cascade(CascadeType.SAVE_UPDATE)			//Can save student object through Trainer 
-																				//can't delete 
+																			//can't delete 
 private List<Student> listOfStd;
+public Trainer() {
+	// TODO Auto-generated constructor stub
+	System.out.println("Trainer object");
+}
 public int getTid() {
 	return tid;
 }

@@ -21,6 +21,15 @@ public class DemoTest {
 	con.configure("hibernate.cfg.xml");
 	SessionFactory sf = con.buildSessionFactory();
 	Session session = sf.openSession();
+	System.out.println("Before fire query");
+				Emp emp1 = (Emp)session.get(Emp.class, 1);
+//	Emp emp1 = (Emp)session.load(Emp.class, 1);
+	System.out.println("After fire query");
+	//System.out.println(emp1.getName());
+	
+	
+	
+	
 	//Retrieve all records using Criteria API 
 	/*	Criteria cr = session.createCriteria(Emp.class);
 		List<Emp>	ll	= cr.list();
@@ -53,7 +62,7 @@ public class DemoTest {
 		String name= ii.next();
 		System.out.println(name);
 	}*/
-	Criteria cr = session.createCriteria(Emp.class);
+	/*Criteria cr = session.createCriteria(Emp.class);
 	
 	Criterion crt = Restrictions.and(Restrictions.gt("salary", 15000f), Restrictions.like("name", "%ee%"));
 	cr.add(crt);
@@ -69,7 +78,7 @@ public class DemoTest {
 		while(ii.hasNext()) {
 			Object obj1[]=(Object[])ii.next();
 			System.out.println(" id "+obj1[0]+" name "+obj1[1]);
-		}
+		}*/
 	session.close();
 	sf.close();
 	}
