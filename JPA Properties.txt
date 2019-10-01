@@ -1,0 +1,3 @@
+<property name="eclipselink.ddl-generation" value="create-tables"/>
+
+<property name="eclipselink.ddl-generation" value="create-or-extends-tables"/>
