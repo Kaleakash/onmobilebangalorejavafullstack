@@ -3,6 +3,7 @@ package com;
 import javax.persistence.Entity;
 import javax.persistence.ForeignKey;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 @Entity
 public class Employees {
@@ -17,14 +18,15 @@ public float getSalary() {
 public void setSalary(float salary) {
 	this.salary = salary;
 }
-/*private int peid;				//FK
+@Transient
+private int peid;				//FK
 
 public int getPeid() {
 	return peid;
 }
 public void setPeid(int peid) {
 	this.peid = peid;
-}*/
+}
 public int getEmpid() {
 	return empid;
 }

@@ -15,7 +15,7 @@ import javax.persistence.OneToMany;
 
 public class Projects {
 @Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
+@GeneratedValue(strategy = GenerationType.AUTO)
 private int pid;
 private String typeOfProject;
 @OneToMany(cascade = CascadeType.ALL)				// Hibernate @OneToMany(mappedBy="tsid")
