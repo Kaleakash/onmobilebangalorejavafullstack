@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/JavaScript">
+    var dd = new Date();
+    var info = '{"id":100,"name":"Raj","salary":12000.50,"doj":'+dd.getHours()+'}';
+    document.write(info+"<br>");
+    //convert string to json 
+
+    var infoJson = JSON.parse(info);
+    document.write(infoJson+"<br>");
+    document.write("Id is "+infoJson.id+"<br/>");
+    document.write("Name is "+infoJson.name+"<br/>");
+    document.write("Salary is "+infoJson.salary+"<br/>");
+    document.write("Date Of Joinig is "+infoJson.doj+"<br/>");
+    //convert json to string 
+    var infoString = JSON.stringify(infoJson);
+    document.write(infoString+"<br>");
+    </script>
+
+</body>
+</html>

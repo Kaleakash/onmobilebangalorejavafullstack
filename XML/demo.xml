@@ -1,0 +1,26 @@
+<Employee>
+	<Emp>
+	<Id>1</Id>
+<Name LName="Kumar" age="21" city="Bangalore">Ravi</Name>
+	<LName>KUmar</LName>
+	<Age>21</Age>
+	<City>Bangalore</City>
+	<Salary>12000</Salary>
+	</Emp>
+	
+	<Emp>
+<Name LName="Kumar" age="21" city="Bangalore">Ravi</Name>
+	<LName>KUmar</LName>
+	<Age>21</Age>
+	<City>Bangalore</City>
+	<Salary>12000</Salary>
+	</Emp>
+	
+	<Emp>
+	<Id>1</Id>
+<Name LName="Kumar" age="21" city="Bangalore">Ravi</Name>
+	<Salary>12000</Salary>
+	<Salary>12000</Salary>
+	<Salary>12000</Salary>
+	</Emp>
+</Employee>

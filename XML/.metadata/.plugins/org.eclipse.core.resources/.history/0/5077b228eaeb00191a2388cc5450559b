@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Employee (Emp*)>
+<!ELEMENT Emp(Id,Name,Salary)>
+<!ELEMENT Id (#PCDATA)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Salary (#PCDATA)>
+<!ATTLIST Name LName CDATA #REQUIRED>

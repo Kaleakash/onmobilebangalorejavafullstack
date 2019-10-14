@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/JavaScript">
+    function validateForm() {
+       // alert("Fun called...")
+       //receive the value through form name
+      // var userInfo = document.f1.user.value;
+      // var passInfo = document.f1.pass.value;
+      var userInfo = document.getElementById("user1").value;
+      var passInfo = document.getElementById("pass1").value;
+       if(userInfo.length==0){
+           //alert("User name is required")
+    document.getElementById("e1").innerHTML="UserName is required";
+    document.getElementById("e2").innerHTML=""
+    //document.write("User Name is required");
+           return false;
+       }else if (passInfo.length ==0) {
+           //alert("Password is required")
+           document.getElementById("e2").innerHTML="Password is required";       
+           document.getElementById("e1").innerHTML="";      
+           return false;
+       }else if(userInfo=="Ravi" && passInfo=="123") {
+            alert("Successfully Login!")
+            return true;
+       }else {
+           alert("Failure try once again")
+            return false;
+       }
+    }
+    </script>
+</head>
+<body>
+    <h3>Login Page Validation using JS</h3>
+    <form action="welcome.html" name="f1" 
+    onsubmit="return validateForm()">
+     <label>UserName</label>   
+     <input type="text" name="user" id="user1"/>
+     <div id="e1" style="color:red;">
+
+     </div>
+     <br/>
+     <label>Password</label>
+     <input type="password" name="pass" id="pass1"/>
+     <div id="e2" style="color:red;">
+
+    </div>
+     <br/>
+     <input type="submit" value="submit"/>
+     <input type="reset" value="reset"/>
+    </form>
+    <h3>Login Page Validation using HTML5</h3>
+    <form action="welcome.html">
+     <label>UserName</label>   
+     <input type="text" name="user" id="user2" 
+     required minlength="2" maxlength="5"
+     />
+     <br/>
+     <label>Password</label>
+     <input type="password" name="pass" id="pass2" required
+     minlength="2" maxlength="4"
+     />
+     <br/>
+     <label>EmaiId</label>
+     <input type="email" name="emailId" required/>
+     <br/>
+     <label>PhNumber</label>
+     <input type="text" name="phNumber" required
+     pattern="\d{10}"/>
+     <br/>
+     <input type="submit" value="submit"/>
+     <input type="reset" value="reset"/>
+    </form>
+</body>
+</html>

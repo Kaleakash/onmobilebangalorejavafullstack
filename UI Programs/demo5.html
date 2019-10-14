@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/JavaScript">
+    function Employee(id,name,salary){
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.disEmp= function(){
+console.log("Id is "+this.id+" Name is "+this.name+" Salary "+this.salary);
+        }
+    }
+    var emp1 = new Employee(100,"Ravi",12000);
+    emp1.disEmp();
+
+    function Manager(numberOfEmp){
+            this.numberOfEmp = numberOfEmp;
+            this.disMgr = function() {
+                console.log("Number of emp "+this.numberOfEmp);
+            }
+    }
+    var mgr1 = new Manager(12);
+    mgr1.disMgr();
+
+   Manager.prototype =  Object.create(emp1);
+   var mgr2 = new Manager(14);
+   mgr2.disEmp();
+   mgr2.disMgr();
+
+   Manager.prototype =  Object.create(new Employee(101,"Ajay",16000));
+   var mgr3 = new Manager(16);
+   mgr3.disEmp();
+   mgr3.disMgr();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            div{
+               border: solid 2px black;
+               width: 200px;
+               height: 200px;
+               text-align: center;
+               padding: 50px;
+                display: inline-block;
+                animation-name: myanim;
+                animation-duration: 10s;
+                animation-iteration-count: infinite;
+                position: relative;
+                border-radius: 120pt;
+            }
+           @keyframes myanim{
+            0%{background-color: red;left:0px;top: 0px;color: white;}
+                25%{background-color: green;left:500px;top: 0px;color: white;}
+                50%{background-color: blue;left:500px;top: 500px;color: white;}
+                75%{background-color: cadetblue;left:0px;top: 500px;color: white;}
+                100%{background-color: fuchsia;left:0px;top: 0px;color: white;}
+           }
+    </style>
+</head>
+<bhody>
+   hello and try again 
+   <div>
+        This is sample Div Tag without Effect
+    </div>
+   <div class="d1">
+       This is sample Div Tag with Effect
+   </div>
+</body>
+</html>

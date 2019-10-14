@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  
+  <context-param>
+  <param-name>driver</param-name>
+  <param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  
+  
+  
+  <servlet>
+    <description>This main servlet program</description>
+    <servlet-name>A</servlet-name>
+    <servlet-class>com.Demo</servlet-class>
+    <init-param>
+    	<param-name>qry</param-name>
+    	<param-value>select * from login where username like ? and password like ?</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>A</servlet-name>
+    <url-pattern>/hi</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Dashboard</display-name>
+    <servlet-name>Dashboard</servlet-name>
+    <servlet-class>com.Dashboard</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Dashboard</servlet-name>
+    <url-pattern>/Dashboard</url-pattern>
+  </servlet-mapping>
+</web-app>

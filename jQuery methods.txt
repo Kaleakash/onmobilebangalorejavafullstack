@@ -1,0 +1,110 @@
+Selector methods 
+
+1. Select All  $("*") 
+2. Select by Element Type $("Element") like $("p"), $("div"), $("b"), $("i") etc. 
+3. Select by Element Id selector $("#idName") 
+4. Select by CSS class Name $(".className") 
+5. Select by attribute and value $("[attribute=value]")
+6. Select has attribute selector $("[attribute]")
+7. Select multiple attribute selector $("[attr=val],[attr=val],[attr=val]")
+8. Select child select $("parent > child ")
+9. Select Inner Elements $("outer inner ")  it is also called as ancestor descendant selector.
+10. Select next adjacent element $("previous + next") 
+11. Select Sibling element $("previous ~ sibling ") 
+12. Select first child selector $("div > p:first-child")
+13. Select last child selector $("div > p.last-child")
+13. Select multiple selector $("selector1, selector2, selector3....selectorn)
+14.   Even Selector $("p:even")
+15. Odd Selector $("p:odd") 
+16. this Selector $(this), it select the current selector. 
+
+
+Filter methods 
+
+1. Filter EQ function $("div:eq(1)"), It select the div tag with the index position 1. Where the index position start from 0.
+2. Filter GT function $("div:gt(1)"), It select the div tag with the index position is greater than 1. 
+3. Filter LT function $("div:lt(3)"), It select the div tag with the index position is less than 3.  
+4. Select First matching elements $("div:first()), Select first matching element, only one element. 
+5. Select Last matching elements $("div:last()), Select last matching element, only one element. 
+6. Select not matching elements $("div:not([id])"), Select the elements which don't have the id attribute. 
+7. Select has matching elements $("div:has(selector)"), Select element having inner elements mating selector. This effect apply for only the child tag of the outer selector not for the same selector. 
+8. Select elements having Inner child or text $("div:parent"). 
+9. Select Elements having no children $(":empty"). 
+10. Select elements containing text $("p:contains("welcome")"). 
+11. Select elements which is visible $("div:visible")
+12. Select first child elements $("div:first-child")
+13. Select last child elements $("div:last-child")
+14. Select nth child elements $("div:nth-child(n)")
+15. Select nth last child elements $("div:nth-last-child(n)")
+16. Select First element of its type $("div:first-of-type")
+17. Select Last elements of its type $("div:last-of-type")
+18. Select nth elements of its type $("div:nth-of-type(n)")
+19. Select nth of last element of its type $("div:nth-last-of-type(n)")
+
+
+Events 
+
+1. click() event 
+2. mousedown() event 
+3. mouseup() event
+4. mouseeneter() event 
+5. mouseleave() event 
+6. unbind() event 
+
+
+Effects methods 
+
+1. hide() effect 
+2. show() effect 
+3. toggle() effect
+4. slideUp() effect 
+5. slideDown() effect 
+6. slideToggle() effect 
+7. fadeOut() effect 
+8. fadeIn() effect 
+9. fadeToggle() effect 
+10. fadeTo() effect 
+11. delay() effect 
+
+
+Animate methods 
+
+1. animate() left property : $("p").animate({"font-size":"3em"},300)
+2. animate() width property : 
+$("p").animate({"font-size":"3em","width":"50%"},300)
+3. animate() left property : 
+$("p").animate({"font-size":"3em","width":"50%","left":"100px"},300)
+Note : the property only work when you set the position :relative with CSS on that element which you want to move left to right. 
+4. animating() left property by incrementing : 
+$("p").animate({"font-size":"3em","width":"50%","left":"+=100px"},300)
+5. animated() font size using "hide" value : 
+$("p").animate({"font-size":"hide","width":"50%","left":"+=100px"},300)
+6. animated() font size using "toggle" value 
+$("p").animate({"font-size":"toggle","width":"50%","left":"+=100px"},300)
+
+
+CSS methods 
+
+jQuery css() method property and value 
+1. css() margin-left  : $(this).css("margin-left","20px")
+2. css() incrementing margin-left : $(this).css("margin-left","+=2px")
+3. css() multiple properties : $(this).css({"margin-left":"+=50px","background-color":"red"})
+4. addClass() single class : $(this).addClass("fontChange")
+5. addClass() multiple classes : $(this).addClass("fontChange colorChange")
+6. removeClass() all classes : $(this).removeClass();
+7. removeClass() single class : $(this).removeClass("fontChange")
+8. removeClass() multiple specific classes : $(this).removeClass("a b c") 
+9. removeClass and addClass() at the same time : 
+
+
+DOM Manipulation
+
+1. append() method 
+2. prepend() method 
+3. after() method 
+4. before() method 
+5. wrap() method 
+6. text() method 
+7. html() method 
+8. att() method 
+9. val() method 

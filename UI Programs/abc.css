@@ -1,0 +1,6 @@
+/**
+          div p {color:gold;}  child of div */
+        /**  div ~ p {color:gold;}*/ /** next sibling of div*/
+        div p:first-child{color:gold;}
+        div p:last-child{color:lawngreen;}
+        div p:nth-of-type(2){color:olivedrab;}

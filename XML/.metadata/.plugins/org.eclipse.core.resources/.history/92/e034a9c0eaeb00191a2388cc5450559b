@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Employee SYSTEM "emp.dtd" >
+<Employee>
+  <Emp>
+    <Id>Id</Id>
+    <Name LName="">Name</Name>
+    <Salary>Salary</Salary>
+  </Emp>
+</Employee>

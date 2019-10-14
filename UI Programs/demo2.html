@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            body{margin: 0px;}
+            /**div{margin: 50px;
+                border-color: red;
+                border-style: solid;
+                border-width: 1px;
+                padding: 50px;
+                width: 120px;
+                display: inline-block;
+                height: 100px;
+            }**/
+            div{margin: 50px;
+                border: solid 1px red;
+                padding: 50px;
+                width: 120px;
+                display: inline-block;
+                height: 100px;
+                background-color: yellowgreen;
+                border-radius: 120px;
+                position: relative;
+            }
+           #d1:hover {
+                    animation-name: myanim;
+                    animation-duration:10s;
+                    animation-iteration-count: infinite;
+                
+                }
+            @keyframes myanim {
+                0%{background-color: tomato;}
+                25%{background-color: yellow;}
+                50%{background-color: turquoise;}
+                75%{background-color: wheat;}
+                100%{background-color: red;}
+            }
+           
+    </style>
+
+</head>
+<body>
+    <div id="d1">
+        This is First Div Tag
+    </div>
+    <div id="d2">
+        This is Second Div Tag
+    </div>
+    <div id="d3">
+        This is Third Div Tag
+    </div>
+</body>
+</html>

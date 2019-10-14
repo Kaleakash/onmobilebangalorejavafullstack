@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.example.org/Employee" 
+xmlns:tns="http://www.example.org/Employee" 
+elementFormDefault="qualified">
+<xsd:element name="Employee">
+	<xsd:complexType>
+		<xsd:sequence>
+		<xsd:element name="Emp" 
+		minOccurs="2" maxOccurs="unbounded">
+		<xsd:complexType>
+			<xsd:sequence>
+<xsd:element name="Id" type="xsd:int"></xsd:element>	
+<xsd:element name="FullName">
+	<xsd:complexType>
+	<xsd:attribute name="FName" type="xsd:string"></xsd:attribute>
+	<xsd:attribute name="LName" type="xsd:string"></xsd:attribute>
+	</xsd:complexType>
+</xsd:element>	
+<xsd:element name="Salary" type="xsd:double"></xsd:element>			
+			</xsd:sequence>
+		</xsd:complexType>
+		</xsd:element>	
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>
