@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import entity.Employee;
 import service.EmployeeService;
@@ -34,9 +35,13 @@ public class EmployeeController extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		PrintWriter pw = response.getWriter();
+		HttpSession hs = request.getSession();
 		EmployeeService es = new EmployeeService();
 		List<Employee> listOfRec= es.getEmployeeInfo();
 pw.println("Number of Records are "+listOfRec.size());
+		hs.setAttribute("empDetails", listOfRec);
+		RequestDispatcher rd = request.getRequestDispatcher("employeeDisplay.jsp");
+		rd.include(request, response);
 //RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
 //rd.include(request, response);
 	}

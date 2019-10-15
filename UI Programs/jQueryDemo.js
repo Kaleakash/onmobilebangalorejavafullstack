@@ -52,7 +52,10 @@ $(document).ready(function(){
    $("#b1").click(function() {
        var name = $("#user").val();
       // alert(name);
+      
        $("#user").val("Mr"+name);
+
+      
    })
 });
 
