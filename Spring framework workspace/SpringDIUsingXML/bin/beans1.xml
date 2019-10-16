@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+<bean class="com.Address" id="add">
+	<property name="state" value="Kar"></property>
+	<property name="city" value="Bangalore"></property>
+</bean>
+
+<bean class="com.Address" id="add1">
+	<property name="state" value="Mh"></property>
+	<property name="city" value="Mumbia"></property>
+</bean>
+<bean class="com.Employee" id="emp" autowire="byName"
+scope="prototype"
+>
+	<property name="id" value="100"></property>
+	<property name="name" value="Ram"></property>
+	<property name="salary" value="14000"></property>
+	
+</bean>
+</beans>
