@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Hibernate/Hibernate jar files/mysql-connector-java-5.1.3-rc-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/asm-debug-all-3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/commons-logging.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.asm-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.beans-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.context.support-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.context-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.core-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.expression-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.jdbc-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.orm-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Akash/Desktop/onMobile Training/Spring/jar files/Spring core container 3.x/2nd Set/org.springframework.transaction-3.0.0.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
