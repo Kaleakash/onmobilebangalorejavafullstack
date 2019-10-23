@@ -1,0 +1,7 @@
+mvn --version 
+mvn archetype:generate 
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart 
+mvn clean 
+mvn compile 
+mvn exec:java -Dexec.mainClass="com.DemoTest"
+mvn install
