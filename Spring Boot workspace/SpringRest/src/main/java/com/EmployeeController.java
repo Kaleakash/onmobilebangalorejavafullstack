@@ -1,5 +1,8 @@
 package com;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,4 +22,14 @@ public class EmployeeController {
 		emp.setDesg("Tester");
 		return emp;
 	}
+	
+	@Autowired
+	EmployeeService employeeService;
+	
+	@RequestMapping(value = "empDb")
+	public List<Employee> getEmployeeInfo() {
+		return employeeService.getEmployeeDetails();
+	}
+	
+	
 }
