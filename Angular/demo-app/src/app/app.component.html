@@ -1,0 +1,29 @@
+<div>
+  <header-component></header-component>
+  <app-child1></app-child1>
+  <h1>Welcome to Angular 8 </h1>
+Id is {{empId}}<br/>
+Name is {{name}}<br/>
+Salary is {{salary}}<br/>
+
+{{displayEmployeeInfo()}}
+
+<br/>
+Employee details are<br/>
+Id is {{empRef.empId}}<br/>
+Name is {{empRef.name}}<br/>
+Salary is {{empRef.salary}}<br/>
+<table border=1>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Salary</th>
+  </tr>
+<tr *ngFor="let emp of empInfo">
+    <td>{{emp.empId}}</td>
+    <td>{{emp.name}}</td>
+    <td>{{emp.salary}}</td>
+</tr>
+</table>
+<footer-component></footer-component>
+</div>
