@@ -6,6 +6,9 @@ Id is {{empId}}<br/>
 Name is {{name}}<br/>
 Salary is {{salary}}<br/>
 
+Name is <input type="text" [value]="name"/><br/>
+
+Using P Tag<div [innerText]="name"></div>
 {{displayEmployeeInfo()}}
 
 <br/>
@@ -26,4 +29,19 @@ Salary is {{empRef.salary}}<br/>
 </tr>
 </table>
 <footer-component></footer-component>
+
+<input type="button" value="click here" (click)="fun()"/>
+
+<h2>Two way binding with ngModel</h2>
+Desg is {{desg}}<br/>
+
+<input type="text" [(ngModel)]="desg"/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<h2>Two way binding without ngModel</h2>
+
+<input type="text" #username (keyup)="0">
+Name is {{username.value}}
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 </div>

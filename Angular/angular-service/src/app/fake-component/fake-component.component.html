@@ -1,0 +1,23 @@
+<div>
+
+<input type="button" value="loadData" (click)="loadData()">   
+
+
+<br/>
+<input type="button" value="display Record in table" 
+(click)="loadDataTableFormat()"> 
+<table border="1">
+    <tr>
+        <td>UserId</td>
+        <td>Id</td>
+        <td>Title</td>
+        <td>completed</td>
+    </tr>
+    <tr *ngFor="let obj of fakeRecord">
+            <td>{{obj.userId}}</td>
+            <td>{{obj.id}}</td>
+            <td>{{obj.title}}</td>
+            <td>{{obj.completed}}</td>
+    </tr>
+</table>
+</div>

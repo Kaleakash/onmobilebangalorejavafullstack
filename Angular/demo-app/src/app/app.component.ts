@@ -12,6 +12,8 @@ export class AppComponent {
   empId:number=100;
   salary:number=25000;
  empRef:Employee;
+desg:string ="Tester";
+
 empInfo:Array<Employee>;
  constructor() {
    this.empRef = new Employee(123,"Ajay",16000);
@@ -31,6 +33,9 @@ empInfo:Array<Employee>;
     return "Welcome to Angular 8";
   }
 
+  fun() {
+    console.log("Event generated...")
+  }
 }
 
 
